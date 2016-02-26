@@ -1,0 +1,2 @@
+#!/bin/bash
+nbc -T=NXT -S=usb -d $1
