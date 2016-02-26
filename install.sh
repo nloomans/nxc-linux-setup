@@ -9,4 +9,6 @@ echo "creating nxt group..."
 sudo -u $SUDO_USER groupadd nxt
 sudo -u $SUDO_USER echo "adding `whoami` to nxt group..."
 sudo -u $SUDO_USER usermod -a -G nxt $(whoami)
-sudo -u $SUDO_USER echo "to finish the installation, please run \`sudo visudo\` and add \"`whoami` ALL = NOPASSWD: /usr/local/bin/nbc\""
+sudo -u $SUDO_USER echo "to finish the installation, please run \`sudo"\
+"visudo\` and add \"`whoami` ALL = NOPASSWD: /usr/local/bin/nbc\" to the end"\
+"of the file."
